@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Laboratório 8</h1>
+    <script>
+    /*Ler o peso (em kg) e a altura (em metros) de uma pessoa e calcular seu IMC. Caso o IMC esteja abaixo de 20, indicar “abaixo do peso”. Entre 20 e 30, “peso normal”, e acima de 30, “excesso de peso”.*/
+    var peso = parseFloat(prompt("Digite seu peso:"));
+    var altura = parseFloat(prompt("Digite sua altura:"));
+    var imc = peso / (altura * altura)
+    if(imc < 20){
+        alert("Abaixo do peso.")
+    }
+    else if(imc >= 20 && imc <= 30){
+            alert("Peso normal.");
+    }
+    else{
+        (imc > 30);
+        alert("Excesso de peso.");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Laboratório 14</h1>
+    <script>
+/*Incrementando o programa da Urna Eletrônica visto anteriormente, vamos usar estruturas de repetição para perguntar ao usuário se ele deseja efetuar mais um voto ao final da execução. Nesse caso, ele retornará ao início do processo de votação, e contabilizará os votos para cada candidato.*/
+        var candidato = 0;
+        var t13 = 0;
+        var t43 = 0;
+        var t45 = 0;
+        var t50 = 0;
+        var tnulo = 0;
+        var opcaoNulo = "";
+        var opcaoConfirmacao = "";
+        var continuarVotando = "";
+        do {
+            opcaoNulo = "";
+            opcaoConfirmacao = "";
+            candidato = parseInt(prompt("Digite o numero do candidato (13, 43, 45, 50): "));
+            switch(candidato){
+                case 13: 
+                    alert("13 - Dilma - PT");
+                    opcaoConfirmacao = String (prompt("Deseja confirmar seu voto? Resp:"));
+                    if(opcaoConfirmacao == 'S' || opcaoConfirmacao == 's') {
+                        alert("Voto computado com sucesso.");
+                        t13++;
+                    } else {
+                        alert("Voto cancelado.");
+                    }
+                break;
+                case 43:
+                    alert("43 - Eduardo Campos - PSB");
+                    opcaoConfirmacao = String (prompt("Deseja confirmar seu voto? Resp: "));
+                    if(opcaoConfirmacao ==  'S' || opcaoConfirmacao == 's' ){
+                        alert("Voto computado com sucesso.");
+                        t43++;
+                    } else {
+                        alert("Voto cancelado.");
+                      }
+                    break;
+                case 45:
+                    alert("45 - Aécio Neves - PSDB");
+                    opcaoConfirmacao = String(prompt("Deseja confirmar seu voto? Resp:"));
+                    if (opcaoConfirmacao == 'S' || opcaoConfirmacao == 's') {
+                        alert("Voto computado com sucesso.");
+                        t45++;
+                    } else {
+                        alert("Voto cancelado.");
+                      }
+                    break;
+                case 50:
+                    alert("50 - Fernando Gabeira - PV");
+                    opcaoConfirmacao = String(prompt("Deseja confirmar seu voto? Resp:"));
+                    if (opcaoConfirmacao == 'S'|| opcaoConfirmacao == 's') {
+                        alert("Voto computado com sucesso.");
+                        t50++;
+                    } else {
+                        alert("Voto cancelado.");
+                      }
+                    break; 
+                default:
+                    alert("\nDeseja votar nulo? :");
+                    opcaoNulo = String(prompt("Deseja confirmar seu voto? Resp: "));
+                    if(opcaoNulo == 'S' || opcaoNulo == 's') {
+                        alert("Voto computado com sucesso.");
+                        tnulo++;
+                    }       else { 
+                        alert("Voto cancelado.");
+            }
+        }
+            continuarVotando = prompt("Continuar votando? Resp: ");
+        } while (continuarVotando == 'S');
+                alert("Candidato 13: " + t13 + "\n" + "Candidato 43: " + t43 + "\n" + "Candidato 45:" + t45 + "\n" + "Candidato 50:" + t50 + "\n" + "Nulo: " + tnulo)
+    
+    </script>  
+</body>
+</html>

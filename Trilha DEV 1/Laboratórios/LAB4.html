@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório 4</title>
+</head>
+<body>
+    <h1>Laboratório 4</h1>
+    <script>
+        //Escreva um programa que leia o tempo gasto em uma viagem (em horas), a velocidade média do veículo (km/h), o consumo médio (km/l), e informe quantos litros de combustívbel foram gastos. Após isso, peça para po usuário informar o preço atual do combustivel e mostre o total gasto.
+
+        var tempo = parseInt(prompt("Digite o tempo(hr):"));
+        var velocidade = parseInt(prompt("Digite a velocidade:"));
+        var consumo = parseInt(prompt("Digite o consumo:"));
+        var valor = parseInt(prompt("Digite o valor do litro de combustivel"));
+        var distancia = parseFloat(tempo * velocidade);
+        var qtdCombustivel = parseFloat(distancia/consumo);
+        var valorTotal = parseFloat(qtdCombustivel * valor);
+        alert("A distancia = " +distancia + "\n" + "Qtd. combustível ="+ qtdCombustivel.toFixed(2) + "\n" + "O valor total foi de =" + valorTotal .toFixed(2));
+    </script>
+</body>
+</html>

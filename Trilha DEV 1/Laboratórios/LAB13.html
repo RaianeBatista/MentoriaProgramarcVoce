@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Laboratório 13</h1>
+    <script>
+/*Escreva uma programa que leia números do usuário e ao final apresente a quantidade de númreos lidos e a soma desses números. O programa deve encerrar quando o usuário digitar 0.*/
+        var contador = 0;
+        var soma = 0;
+        var numero = 0;
+        numero = parseInt(prompt("Digite um número"));
+        while (numero != 0){
+            soma += numero;
+            contador++;
+            numero = parseInt(prompt('Digite um número'));
+        }
+        alert("Soma = "  + soma + ", Qtd. número = " + contador);
+    </script>
+</body>
+</html>

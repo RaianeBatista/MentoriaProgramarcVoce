@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Laboratório 5</title>
+</head>
+<body>
+    <h1>Laboratório 5</h1>
+    <script>
+// Escreva um programa que leia o valor guardado em uma poupança e a sua taxa de juros. Em seguida, o usuário deve indicar a quantos meses quer a sua consulta. O programa deve mostrar o valor atualizado da poupança após o período estipulado.
+var valor = parseFloat(prompt("Digite o valor: "));
+var juros = parseFloat(prompt("Taxa de juros: "));
+var meses = parseInt(prompt("Informe a quantidade de meses: "));
+var poupanca = parseFloat(valor * (juros/100)* meses);
+var valorTotal = parseFloat(valor + poupanca);
+alert("Valor atualizado da poupança no período de " +meses+  " meses ficou no total R$" +valorTotal .toFixed(2))
+
+
+
+    </script>
+</body>
+</htm

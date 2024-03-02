@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Laboratório 12</h1>
+    <script>
+/*Faça um programa que leia o nome e a idade de 5 pessoas, e mostre o nome da pessoa mais velha.*/
+    var pessoa = [];
+    var idade = [];
+    var indice = 0;
+    var maiorIdade = 0;
+    for (var i = 0; i < 5; i++){
+        var nome = String(prompt('Digite o nome'));
+        pessoa.push(nome);
+        var id = parseInt(prompt('Digite a idade'));
+        idade.push(id);
+        alert(pessoa)
+        alert(idade)
+    }
+    var indice = 0
+    for (var k = 1; k < idade.length; k++){
+        if(idade [k] > idade[indice]){
+            indice = k;
+    }
+}
+alert("A pessoa de maior é " + pessoa [indice]);
+    </script>
+</body>
+</html>

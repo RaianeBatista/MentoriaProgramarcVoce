@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Laboratório 10</h1>
+    <script>
+/*Escreva um programa de urna eletrônica. O usuário deverá digitar o número do seu candidato a presidente (13, 45, 43, 50), e uma mensagem deverá aparecer na tela com o nome do candidato escolhido, e uma confirmação . Deseja confirmar seu voto? S/N. Se o usuário digitar um número incorreto, a confirmação deverá ser : Deseja votar nulo? S/N. Se o usuário confirmar: Voto computado com sucesso. Caso contrário: Voto cancelado.*/
+        var voto = parseInt(prompt("Digite o numero do seu candidato"));
+        if(voto == 13 || voto == 45 || voto == 50){
+            var confirm = prompt ("Deseja confirmar seu voto? S/N")
+            if (confirm == "s"){
+                alert("Voto computado com sucesso")
+        }
+            else{
+                alert("Voto cancelado")
+            }
+        }
+        else{
+            nulo = prompt("Deseja votar nulo?   S/N")
+            if (nulo == "s"){
+                alert("Voto computado com sucesso")
+            }
+            else{
+                alert("Voto cancelado")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório 7</title>
+</head>
+<body>
+    <h1>Laboratório 7</h1>
+    <script>
+    /*Escreva um programa que leia as 3 notas de um aluno e em seguida informe se ele foi aprovado ou reprovado. Considere a média igual a 6.*/
+        var n1 = parseFloat(prompt("Digite a primeira nota:"));
+        var n2 = parseFloat(prompt("Digite a segunda nota:"));
+        var n3 = parseFloat(prompt("Digite a terceira nota:"));
+        var media = ((n1*3) + (n2*3) + (n3*4)) / 10
+        if(media >= 6){
+            alert("APROVADO.");
+    }
+        else{
+            alert("REPROVADO.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Laboratório 9</h1>
+    <script>
+/*Num posto, temos o preço da gasolina a R$ 2.30 e o etanol a R$ 1.40. O sistema deverá perguntar ao usuário a quantidade a ser abastecida em reais. Em seguida, o usuário deverá informar se quer abastecer com gasolina (1) ou etanol (2). O sistema irá calcular a quantidade de litros abastecidos no veículo e informar ao usuário.*/
+
+        var valor = parseInt(prompt("Informe a quantidade em reais a ser abastecida:"));
+        var y = parseInt(prompt("Digite qual o combustível - (1) Gasolina -(2) Etanol"));
+        if(y == 1){
+            var litros = valor/2.30;
+            alert("Litros " + litros .toFixed(2));
+        }
+        else if(y == 2) {
+            var litros = valor / 1.40;
+            alert("Litros " + litros .toFixed(2));
+        }
+        else {
+            alert("Opçao inválida");
+        }
+
+    </script>
+</body>
+</html>
